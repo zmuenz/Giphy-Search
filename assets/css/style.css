@@ -1,0 +1,46 @@
+.giphy-btn {
+    margin: 20px 5px;
+}
+
+.click-to-gif {
+    margin: 10px 20px 10px 0;
+}
+
+.div-float {
+    float: left;
+    margin-bottom: 10px;
+}
+
+.inside-form {
+    padding: 25px 30px 30px;
+    background-color: #17a2b8;
+    border-radius: 10px;
+    margin: 20px 0 0;
+}
+
+#reactions-view {
+    margin: 10px 0 30px;
+}
+
+#buttons-view {
+    margin: 10px 0 0;
+}
+
+body {
+    background-image: url('../images/low_contrast_linen.png');
+    background-repeat: repeat;
+    color: #fff;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #fff;
+    margin: 1em 0;
+    padding: 0; 
+}
+
+h1 {
+    margin: 30px 0 0;
+}

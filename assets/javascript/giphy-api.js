@@ -22,7 +22,7 @@ function displayGifInfo() {
             newImg.setAttribute("src", giphyURL);
             var ratingDiv = document.createElement("P");
             ratingDiv.textContent = gifRating;
-            newGifDiv.classList.add("div-float")
+            newGifDiv.classList.add("div-float");
             newImg.classList.add("click-to-gif");
             newGifDiv.append(newImg);
             giphyDiv.append(newGifDiv);
@@ -32,7 +32,7 @@ function displayGifInfo() {
         $("#reactions-view").append(giphyDiv);
     });
 
-}
+};
 
 
 // Function for displaying reaction buttons
@@ -56,7 +56,7 @@ function renderButtons() {
         // Adding the button to the buttons-view div
         $("#buttons-view").append(giphySearchButton);
     }
-}
+};
 
 // This function handles events when a reaction button is clicked
 $("#add-reaction").on("click", function (event) {
@@ -82,16 +82,16 @@ $("#add-reaction").on("click", function (event) {
 $(document).on("click", ".giphy-btn", displayGifInfo);
 
 // Start and stop the gif playing
-$(document).on('click', '.click-to-gif', function () {
+$(document).on("click", ".click-to-gif", function () {
     var src = $(this).attr("src");
-    if ($(this).hasClass('playing')) {
+    if ($(this).hasClass("playing")) {
         //stop
-        $(this).attr('src', src.replace(/\.gif/i, "_s.gif"))
-        $(this).removeClass('playing');
+        $(this).attr("src", src.replace(/\.gif/i, "_s.gif"))
+        $(this).removeClass("playing");
     } else {
         //play
-        $(this).addClass('playing');
-        $(this).attr('src', src.replace(/\_s.gif/i, ".gif"))
+        $(this).addClass("playing");
+        $(this).attr("src", src.replace(/\_s.gif/i, ".gif"))
     }
 });
 
